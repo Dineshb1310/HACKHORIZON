@@ -126,14 +126,14 @@ rather than simply displaying or summarizing operational alerts.
 
  Team
 
-**Team:** *[Your Team Name]*
+**Team:** *HACKHORIZON*
 
-| Member     | Role                   |
-| ---------- | ---------------------- |
-| [Member 1] | AI / Backend           |
-| [Member 2] | Frontend               |
-| [Member 3] | Database / Integration |
-| [Member 4] | Testing / Research     |
+| Member          | Role                      |
+| ----------      | ----------------------    |
+| VIJAY SRIDHAR P | AI / Backend / Integration|          |
+| DINESH B        | Frontend                  |
+| HARIHARAN M     | Database                  |
+| [Member 4]      | Testing / Research        |
 
  License
 
