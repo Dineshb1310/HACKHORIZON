@@ -133,7 +133,7 @@ rather than simply displaying or summarizing operational alerts.
 | VIJAY SRIDHAR P | AI / Backend / Integration|          |
 | DINESH B        | Frontend                  |
 | HARIHARAN M     | Database                  |
-| [Member 4]      | Testing / Research        |
+| VISHWEESHVARA P | Testing / Research        |
 
  License
 
