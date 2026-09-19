@@ -1,15 +1,99 @@
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>assistant</title>
-    <script type="module" crossorigin src="/assets/index-DccqSSEp.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-CS3SSwcG.css">
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Incidents | HACKHORIZON</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="topbar">
+
+    <div class="logo">◈ HACKHORIZON</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="Alerts.html">Alerts</a>
+        <a href="incident.html" class="active">Incidents</a>
+        <a href="Remediation.html">Remediation</a>
+        <a href="Aianalytics.html">AI Analytics</a>
+        <a href="audiologs.html">Audio Logs</a>
+    </nav>
+
+</header>
+
+<main class="page">
+
+    <div class="page-heading">
+        <div>
+            <span>INTELLIGENT CORRELATION</span>
+            <h1>Incident Management</h1>
+        </div>
+    </div>
+
+
+    <div class="incident-grid">
+
+        <div class="incident-card critical-card">
+
+            <div class="incident-top">
+                <span class="badge critical">CRITICAL</span>
+                <span>INC-1024</span>
+            </div>
+
+            <h2>Database Performance Degradation</h2>
+
+            <p>
+                Multiple database alerts have been correlated
+                into a single incident.
+            </p>
+
+            <div class="incident-info">
+                <span>12 Alerts</span>
+                <span>Detected 18 min ago</span>
+            </div>
+
+            <a href="Remediation.html" class="btn secondary">
+                Investigate →
+            </a>
+
+        </div>
+
+
+        <div class="incident-card">
+
+            <div class="incident-top">
+                <span class="badge high">HIGH</span>
+                <span>INC-1023</span>
+            </div>
+
+            <h2>API Service Latency</h2>
+
+            <p>
+                Increased response time detected across
+                multiple application services.
+            </p>
+
+            <div class="incident-info">
+                <span>7 Alerts</span>
+                <span>Detected 32 min ago</span>
+            </div>
+
+            <a href="Aianalytics.html" class="btn secondary">
+                Analyze →
+            </a>
+
+        </div>
+
+    </div>
+
+</main>
+
+</body>
 </html>
