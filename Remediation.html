@@ -1,15 +1,107 @@
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>assistant</title>
-    <script type="module" crossorigin src="/assets/index-DccqSSEp.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-CS3SSwcG.css">
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Remediation | HACKHORIZON</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="topbar">
+
+    <div class="logo">◈ HACKHORIZON</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="Alerts.html">Alerts</a>
+        <a href="incident.html">Incidents</a>
+        <a href="Remediation.html" class="active">Remediation</a>
+        <a href="Aianalytics.html">AI Analytics</a>
+        <a href="audiologs.html">Audio Logs</a>
+    </nav>
+
+</header>
+
+<main class="page">
+
+    <div class="page-heading">
+
+        <div>
+            <span>AUTOMATED RECOVERY</span>
+            <h1>Remediation Center</h1>
+        </div>
+
+    </div>
+
+
+    <div class="remediation-grid">
+
+        <div class="remediation-card">
+
+            <span class="success-icon">✓</span>
+
+            <h2>Restart Application Service</h2>
+
+            <p>
+                Automatically restart the affected service
+                after detecting application failure.
+            </p>
+
+            <div class="remediation-status">
+                <span>Success</span>
+                <small>Completed 5 min ago</small>
+            </div>
+
+        </div>
+
+
+        <div class="remediation-card">
+
+            <span class="success-icon">✓</span>
+
+            <h2>Clear Database Connections</h2>
+
+            <p>
+                Reset inactive connections to restore
+                database performance.
+            </p>
+
+            <div class="remediation-status">
+                <span>Completed</span>
+                <small>Completed 12 min ago</small>
+            </div>
+
+        </div>
+
+
+        <div class="remediation-card">
+
+            <span class="warning-icon">!</span>
+
+            <h2>Scale Application Resources</h2>
+
+            <p>
+                Increase available resources based on
+                current system demand.
+            </p>
+
+            <button class="btn primary" onclick="runRemediation()">
+                Execute Action
+            </button>
+
+        </div>
+
+    </div>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
 </html>
