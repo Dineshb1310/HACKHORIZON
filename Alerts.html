@@ -1,15 +1,137 @@
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>assistant</title>
-    <script type="module" crossorigin src="/assets/index-DccqSSEp.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-CS3SSwcG.css">
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Alerts | HACKHORIZON</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="topbar">
+
+    <div class="logo">◈ HACKHORIZON</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="Alerts.html" class="active">Alerts</a>
+        <a href="incident.html">Incidents</a>
+        <a href="Remediation.html">Remediation</a>
+        <a href="Aianalytics.html">AI Analytics</a>
+        <a href="audiologs.html">Audio Logs</a>
+    </nav>
+
+</header>
+
+<main class="page">
+
+    <div class="page-heading">
+        <div>
+            <span>MONITORING</span>
+            <h1>Operational Alerts</h1>
+        </div>
+
+        <button class="btn primary" onclick="refreshAlerts()">
+            ↻ Refresh
+        </button>
+    </div>
+
+
+    <div class="filter-bar">
+
+        <input
+            type="text"
+            id="alertSearch"
+            placeholder="Search alerts..."
+            onkeyup="filterAlerts()"
+        >
+
+        <select>
+            <option>All Severity</option>
+            <option>Critical</option>
+            <option>High</option>
+            <option>Medium</option>
+            <option>Low</option>
+        </select>
+
+        <select>
+            <option>All Sources</option>
+            <option>Application</option>
+            <option>Database</option>
+            <option>Network</option>
+            <option>Infrastructure</option>
+        </select>
+
+    </div>
+
+
+    <div class="table-container">
+
+        <table id="alertsTable">
+
+            <thead>
+                <tr>
+                    <th>Alert ID</th>
+                    <th>Source</th>
+                    <th>Message</th>
+                    <th>Severity</th>
+                    <th>Time</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>ALT-001</td>
+                    <td>Database</td>
+                    <td>High CPU utilization detected</td>
+                    <td><span class="badge critical">Critical</span></td>
+                    <td>10:42 AM</td>
+                    <td>Active</td>
+                </tr>
+
+                <tr>
+                    <td>ALT-002</td>
+                    <td>Application</td>
+                    <td>API response time increased</td>
+                    <td><span class="badge high">High</span></td>
+                    <td>10:38 AM</td>
+                    <td>Active</td>
+                </tr>
+
+                <tr>
+                    <td>ALT-003</td>
+                    <td>Network</td>
+                    <td>Packet loss detected</td>
+                    <td><span class="badge medium">Medium</span></td>
+                    <td>10:30 AM</td>
+                    <td>Investigating</td>
+                </tr>
+
+                <tr>
+                    <td>ALT-004</td>
+                    <td>Infrastructure</td>
+                    <td>Memory usage above threshold</td>
+                    <td><span class="badge high">High</span></td>
+                    <td>10:21 AM</td>
+                    <td>Active</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
 </html>
