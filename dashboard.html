@@ -1,15 +1,136 @@
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>assistant</title>
-    <script type="module" crossorigin src="/assets/index-DccqSSEp.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-CS3SSwcG.css">
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | HACKHORIZON</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="topbar">
+
+    <div class="logo">
+        ◈ HACKHORIZON
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="dashboard.html" class="active">Dashboard</a>
+        <a href="Alerts.html">Alerts</a>
+        <a href="incident.html">Incidents</a>
+        <a href="Remediation.html">Remediation</a>
+        <a href="Aianalytics.html">AI Analytics</a>
+        <a href="audiologs.html">Audio Logs</a>
+    </nav>
+
+</header>
+
+<main class="dashboard">
+
+    <div class="page-heading">
+        <div>
+            <span>COMMAND CENTER</span>
+            <h1>System Dashboard</h1>
+        </div>
+
+        <div class="status">
+            <span></span>
+            SYSTEM OPERATIONAL
+        </div>
+    </div>
+
+
+    <section class="stats-grid">
+
+        <div class="stat-card">
+            <small>TOTAL ALERTS</small>
+            <strong>128</strong>
+            <span>↑ 12% today</span>
+        </div>
+
+        <div class="stat-card">
+            <small>ACTIVE INCIDENTS</small>
+            <strong>24</strong>
+            <span>8 high priority</span>
+        </div>
+
+        <div class="stat-card">
+            <small>RESOLVED</small>
+            <strong>96</strong>
+            <span>↑ 18 today</span>
+        </div>
+
+        <div class="stat-card">
+            <small>AUTOMATION RATE</small>
+            <strong>87%</strong>
+            <span>↑ 4.2%</span>
+        </div>
+
+    </section>
+
+
+    <section class="dashboard-grid">
+
+        <div class="panel">
+
+            <div class="panel-header">
+                <h2>Incident Activity</h2>
+                <span>Last 24 Hours</span>
+            </div>
+
+            <div class="chart-placeholder">
+                <div class="chart-bars">
+                    <i style="height:40%"></i>
+                    <i style="height:70%"></i>
+                    <i style="height:50%"></i>
+                    <i style="height:85%"></i>
+                    <i style="height:60%"></i>
+                    <i style="height:95%"></i>
+                    <i style="height:65%"></i>
+                    <i style="height:80%"></i>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="panel">
+
+            <div class="panel-header">
+                <h2>System Health</h2>
+            </div>
+
+            <div class="health-item">
+                <span>Application Services</span>
+                <b class="healthy">Healthy</b>
+            </div>
+
+            <div class="health-item">
+                <span>Database</span>
+                <b class="healthy">Healthy</b>
+            </div>
+
+            <div class="health-item">
+                <span>Network</span>
+                <b class="warning">Warning</b>
+            </div>
+
+            <div class="health-item">
+                <span>API Gateway</span>
+                <b class="healthy">Healthy</b>
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
 </html>
